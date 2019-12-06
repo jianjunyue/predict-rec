@@ -25,5 +25,16 @@
 			<artifactId>guava</artifactId>
 			<version>21.0</version>
 		</dependency>
+		<!-- abtest -->
+		<dependency>
+			<groupId>me.ele</groupId>
+			<artifactId>victoria-java</artifactId>
+			<version>3.1.2</version>
+		</dependency>
+		<dependency>
+			<groupId>org.ehcache</groupId>
+			<artifactId>ehcache</artifactId>
+			<version>3.5.2</version>
+		</dependency>
 	</dependencies>
 </project>

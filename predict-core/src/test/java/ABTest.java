@@ -1,5 +1,7 @@
 import java.util.Map;
 
+import predict.BannerModelSort;
+
  
 public class ABTest {
 
@@ -8,6 +10,9 @@ public class ABTest {
 //		AbTestUtils abtestUtils=new AbTestUtils();
 //		 Map<String, String>  versionMap = abtestUtils.get("wewewe", 10000L);
 //		 System.out.println(versionMap);
+		
+		BannerModelSort sort=new BannerModelSort();
+		sort.doWeight();
 	}
 
 }

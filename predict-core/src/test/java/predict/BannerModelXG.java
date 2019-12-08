@@ -1,4 +1,4 @@
-package org.predict.core.predict.model;
+package predict;
 
 import java.io.IOException;
 import java.util.List;

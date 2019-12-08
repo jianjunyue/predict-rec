@@ -1,4 +1,4 @@
-package org.predict.core.predict.model;
+package predict;
 
 import biz.k11i.xgboost.Predictor;
 import biz.k11i.xgboost.util.FVec;

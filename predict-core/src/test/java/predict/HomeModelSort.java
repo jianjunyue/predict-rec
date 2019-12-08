@@ -1,4 +1,4 @@
-package org.predict.core.predict.model;
+package predict;
 
 import java.util.Collections;
 import java.util.List;
@@ -10,14 +10,14 @@ import org.predict.core.entity.ScoreDto;
 
 import com.google.common.collect.Lists;
 
-public class BannerModelSort {
+public class HomeModelSort {
 
-	private BannerModelXG bannerModelXG = new BannerModelXG();
+	private XGboostHomeRecWeighting HOMEModelXG = new XGboostHomeRecWeighting();
 
 	public void doWeight() {
 		ScoreDto dto = new ScoreDto();
 		List<FeatureTuple> featureTuples = getModelLog(dto);
-		double score = bannerModelXG.doWeight(featureTuples);
+		double score = HOMEModelXG.predict(featureTuples);
 
 		System.out.println(score);
 	}

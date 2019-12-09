@@ -8,5 +8,8 @@
   <modules>
   	<module>predict-core</module>
     <module>predict-test</module>
+    <module>predict-data</module>
+    <module>predict-model</module>
+    <module>predict-base</module>
   </modules>
 </project>

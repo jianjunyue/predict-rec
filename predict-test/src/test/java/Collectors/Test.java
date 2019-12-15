@@ -19,6 +19,7 @@ import org.apache.commons.lang3.ThreadUtils;
 
 import com.alibaba.fastjson.JSONObject;
 
+import JSON.ObjectMappers;
 import Test.DoubleCheckedSingleton;
 import cn.hutool.core.convert.Convert;
 import cn.hutool.core.io.resource.ClassPathResource;
@@ -29,10 +30,14 @@ import cn.hutool.cron.CronUtil;
 public class Test {
 
 	public static void main(String[] args) {
+		
+		
+		DoubleCheckedSingleton.getInstance().predict("s");
+		
 		CronUtil.start();
 		 Singleton.get(DoubleCheckedSingleton.class);
 //		DoubleCheckedSingleton d=new DoubleCheckedSingleton();
-		DoubleCheckedSingleton.getSingleInstance().test();
+		DoubleCheckedSingleton.getInstance().test();
 		ClassPathResource resource = new ClassPathResource("test.properties");
 		resource.getStream();
 		String a = "１２３４５６７８９￥￥";

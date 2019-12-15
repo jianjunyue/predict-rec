@@ -1,9 +1,18 @@
 package Test;
 
-public class DoubleCheckedSingleton {
+import java.util.List;
+
+public class DoubleCheckedSingleton implements ItShopModel{
 	   private static DoubleCheckedSingleton singleton= null;  
  
-	    public static DoubleCheckedSingleton getSingleInstance(){  
+		@Override
+		public List<String> predict(String ctx) {
+	    	System.out.println(String.format("getSingleInstance ctx:%s",ctx));
+			return null;
+		}
+	   
+		
+	    public static DoubleCheckedSingleton getInstance(){  
 	        if(null == singleton ) {
 	              synchronized(DoubleCheckedSingleton.class){
 	                     if(null == singleton)
@@ -18,6 +27,8 @@ public class DoubleCheckedSingleton {
 	    }
 	    
 	    private DoubleCheckedSingleton(){  
-	    }  
+	    }
+
+ 
  
 }
